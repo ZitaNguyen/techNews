@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2daa2170a926291e830845de497da06",
+    "content-hash": "7485dd560b8421411f2ccb552ddd8250",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -916,6 +916,62 @@
             ],
             "description": "A pack for Apache support in Symfony",
             "time": "2017-12-12T01:46:35+00:00"
+        },
+        {
+            "name": "symfony/asset",
+            "version": "v4.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/asset.git",
+                "reference": "7eee96a8630f9448304ae4f0e3b474ea4e033664"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/7eee96a8630f9448304ae4f0e3b474ea4e033664",
+                "reference": "7eee96a8630f9448304ae4f0e3b474ea4e033664",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Asset\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Asset Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-16T20:35:37+00:00"
         },
         {
             "name": "symfony/cache",
@@ -2446,16 +2502,16 @@
         },
         {
             "name": "symfony/twig-bundle",
-            "version": "v4.2.5",
+            "version": "v4.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bundle.git",
-                "reference": "6c6e3be7020563c36a34139bef94fed0735cdf9e"
+                "reference": "321d5bd0608f3cf34062c47edfe6079556f6d6f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/6c6e3be7020563c36a34139bef94fed0735cdf9e",
-                "reference": "6c6e3be7020563c36a34139bef94fed0735cdf9e",
+                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/321d5bd0608f3cf34062c47edfe6079556f6d6f1",
+                "reference": "321d5bd0608f3cf34062c47edfe6079556f6d6f1",
                 "shasum": ""
             },
             "require": {
@@ -2518,7 +2574,7 @@
             ],
             "description": "Symfony TwigBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-03-04T11:47:55+00:00"
+            "time": "2019-04-11T11:27:41+00:00"
         },
         {
             "name": "symfony/var-dumper",
