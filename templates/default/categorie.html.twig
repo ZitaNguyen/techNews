@@ -75,6 +75,6 @@
                 </div>#}
 
             </div>
-            {% include ('components/_sidebar.html.twig') %}
+            {{ render(controller('App\\Controller\\DefaultController::sidebar')) }}
         </div>
     {% endblock %}
