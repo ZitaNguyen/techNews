@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+    Rédiger un Article
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <h3>Rédiger un Article</h3>
+            {{ form( form ) }}
+        </div>
+        {{ render(controller('App\\Controller\\DefaultController::sidebar')) }}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'form[contenu]' );
+    </script>
+{% endblock %}

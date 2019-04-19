@@ -7,7 +7,15 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\RadioType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -68,6 +76,81 @@ class ArticleController extends AbstractController
             . 'de Auteur : '
             . $membre->getPrenom()
         );
+
+    }
+
+    /**
+     * Formulaire pour créer un article
+     * @Route("/creer-un-article", name="article_add")
+     */
+    public function  addArticle()
+    {
+        # Création d'un nouvel article
+        $article = new Article();
+
+
+        # Récupération d'un Auteur (Membre)
+        $membre = $this->getDoctrine()
+                    ->getRepository(Membre::class)
+                    ->find(1);
+
+        # Affecter un Auteur à l'Article
+        $article->setMembre($membre);
+
+        # Création d'un Formulaire permettant l'ajout d'un Article
+        $form = $this->createFormBuilder($article)
+                    ->add('titre', TextType::class, [
+                        'required' => true,
+                        'label'    => false,
+                        'attr'     => [
+                            'placeholder' => "Titre de l'Article"
+                        ]
+                    ])
+                    ->add('categorie', EntityType::class, [
+                        'class' => Categorie::class,
+                        'choice_label' => 'nom',
+                        'label' => false,
+                        'placeholder' => 'Choisissez le catégorie'
+                    ])
+                    ->add('contenu', TextareaType::class, [
+                        'required' => true,
+                        'label'    => false,
+                        'attr'     => [
+                            'placeholder' => "Contenu de l'Article"
+                        ]
+                    ])
+                    ->add('featuredImage', FileType::class, [
+                        'required' => true,
+                        'label'    => false,
+                        'attr' => [
+                            'class' => 'dropify'
+                        ]
+                    ])
+                    ->add('special', CheckboxType::class, [
+                        'required' => false,
+                        'attr' => [
+                            'data-toggle' => 'toggle',
+                            'data-on' => 'Oui',
+                            'data-off' => 'Non'
+                        ]
+                    ])
+                    ->add('spotlight', CheckboxType::class, [
+                        'required' => false,
+                        'attr' => [
+                            'data-toggle' => 'toggle',
+                            'data-on' => 'Oui',
+                            'data-off' => 'Non'
+                        ]
+                    ])
+                    ->add('submit', SubmitType::class, [
+                        'label' => 'Publier mon Article'
+                    ])
+                    ->getForm();
+
+        # Affichage du formulaire dans la vue
+        return $this->render("article/addform.html.twig", [
+            'form' => $form->createView()
+        ]);
 
     }
 
