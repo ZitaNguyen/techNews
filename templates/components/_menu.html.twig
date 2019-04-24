@@ -22,6 +22,25 @@
                         <img alt="Logo" src="{{ asset('images/logo.png') }}" />
                     </a>
                 </div>
+                <div class="col-md-push-6 col-md-3 col-sm-push-4 col-sm-4 col-xs-12">
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+                            <a href="{{ path('membre_deconnexion') }}" class="btn btn-default">
+                                Déconnexion
+                            </a>
+
+                    {% else %}
+
+                            <a href="{{ path('membre_connexion') }}" class="btn btn-default">
+                                Connexion
+                            </a>
+
+                            <a href="{{ path('membre_inscription') }}" class="btn btn-default">
+                                Inscription
+                            </a>
+
+                    {% endif %}
+                </div>
             </div>
         </header>
         <!--menu-->
