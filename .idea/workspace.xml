@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694ab045-c903-4e06-9b43-117fbaa0fbe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MembreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ConnexionFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/MembreFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/membre/connexion.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/membre/inscription.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/techNews.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/techNews.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Membre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Membre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_menu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_sidebar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_sidebar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +18,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MembreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
+            <state relative-caret-position="1241">
               <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="e#36#58#0#PHP" expanded="true" />
-                <element signature="e#1490#1508#1#PHP" expanded="true" />
-                <element signature="e#1194#1224#0#PHP" expanded="true" />
-                <element signature="e#2240#2268#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="561">
               <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
@@ -75,13 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/components/_menu.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="612">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#1056#1074#0#Twig" expanded="true" />
-                <element signature="e#1272#1288#0#Twig" expanded="true" />
-                <element signature="e#1456#1474#0#Twig" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,9 +67,9 @@
         <entry file="file://$PROJECT_DIR$/templates/components/_sidebar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
               <folding>
-                <element signature="e#373#384#0#Twig" expanded="true" />
+                <element signature="e#353#364#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,9 +200,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="136" />
-    <option name="width" value="1781" />
-    <option name="height" value="1047" />
+    <option name="x" value="-7" />
+    <option name="y" value="3" />
+    <option name="width" value="1036" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -353,18 +331,18 @@
       <workItem from="1555660451390" duration="20610000" />
       <workItem from="1556005180305" duration="14481000" />
       <workItem from="1556031869560" duration="1191000" />
-      <workItem from="1556091393465" duration="21058000" />
+      <workItem from="1556091393465" duration="21172000" />
+      <workItem from="1556178002518" duration="590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116292000" />
+    <option name="totallyTimeSpent" value="116996000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="0" width="1781" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="3" width="1036" height="733" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14991283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26741803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -632,40 +610,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MembreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
+        <state relative-caret-position="1241">
           <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="e#36#58#0#PHP" expanded="true" />
-            <element signature="e#1490#1508#1#PHP" expanded="true" />
-            <element signature="e#1194#1224#0#PHP" expanded="true" />
-            <element signature="e#2240#2268#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/components/_menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#1056#1074#0#Twig" expanded="true" />
-            <element signature="e#1272#1288#0#Twig" expanded="true" />
-            <element signature="e#1456#1474#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -676,10 +625,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/_menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/components/_sidebar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding>
             <element signature="e#373#384#0#Twig" expanded="true" />
           </folding>
